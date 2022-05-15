@@ -1,0 +1,39 @@
+{
+  "name": "nid-chain-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js",
+    "test:smartcontract": "npx hardhat test",
+    "deploy:smartcontract": "npx hardhat run ./scripts/deploy.js --network rinkeby"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.6",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.6.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.6",
+    "hardhat": "^2.9.5",
+    "accesscontrol": "^2.2.1",
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.26.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.26.0",
+    "mongoose": "^5.9.15",
+    "mongoose-beautiful-unique-validation": "^7.1.1",
+    "mongoose-slug-generator": "^1.0.4",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.12",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0"
+  }
+}
